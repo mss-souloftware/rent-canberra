@@ -45,6 +45,8 @@ export default function Navbar() {
     },
   ];
 
+
+  
   return (
     <nav className="basis-5/6">
       <ul className="flex flex-row gap-4 justify-end">
