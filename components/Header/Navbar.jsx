@@ -1,5 +1,8 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import { SessionProvider } from "next-auth/react";
+import UserProfile from "./UserProfile";
 
 export default function Navbar() {
   const navItems = [
@@ -33,22 +36,10 @@ export default function Navbar() {
       navlink: "/",
       navtitle: "Make a Listing",
     },
-    {
-      id: crypto.randomUUID(),
-      navlink: "/",
-      navtitle: "Log In",
-    },
-    {
-      id: crypto.randomUUID(),
-      navlink: "/",
-      navtitle: "Sign Up",
-    },
   ];
 
-
-  
   return (
-    <nav className="basis-5/6">
+    <nav className="basis-5/6 flex justify-end">
       <ul className="flex flex-row gap-4 justify-end">
         {navItems.map((navItem) => (
           <li key={navItem.id}>
@@ -61,6 +52,9 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
+      <SessionProvider>
+        <UserProfile />
+      </SessionProvider>
     </nav>
   );
 }
