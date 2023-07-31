@@ -15,7 +15,7 @@ export default function NewsCard(props) {
             fill={true}
           />
         </div>
-        <h3 className="my-2 font-semibold text-lg">{props.title}</h3>
+        <h3 className="my-3 font-semibold text-base">{props.title}</h3>
       </Link>
     </div>
   );

@@ -7,18 +7,18 @@ export default function News() {
   const properties = [
     {
       id: crypto.randomUUID(),
-      title: "Home in Canberra",
-      imageSrc: "/images/propertyCard.jpg",
+      title: "Beautifully-updated home on a massive block in Woden Valley is kind of a big deal",
+      imageSrc: "/images/newsCard.jpg",
     },
     {
       id: crypto.randomUUID(),
-      title: "Home in Canberra 2",
-      imageSrc: "/images/propertyCard.jpg",
+      title: "Beautifully-updated home on a massive block in Woden Valley is kind of a big deal 2",
+      imageSrc: "/images/newsCard.jpg",
     },
     {
       id: crypto.randomUUID(),
-      title: "Home in Canberra 3",
-      imageSrc: "/images/propertyCard.jpg",
+      title: "Beautifully-updated home on a massive block in Woden Valley is kind of a big deal 3",
+      imageSrc: "/images/newsCard.jpg",
     },
   ];
 

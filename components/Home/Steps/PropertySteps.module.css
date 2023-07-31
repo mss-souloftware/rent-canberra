@@ -1,6 +1,7 @@
 .imageBoxData {
     position: absolute;
-    width: 250px;
-    height: 250px;
-    right: -200px;
+    width: 230px;
+    height: 230px;
+    right: -170px;
+    z-index:9;
 }
