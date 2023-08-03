@@ -39,7 +39,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="basis-5/6 flex justify-end">
+    <nav className="basis-5/6 md:flex justify-end hidden">
       <ul className="flex flex-row gap-4 justify-end">
         {navItems.map((navItem) => (
           <li key={navItem.id}>
